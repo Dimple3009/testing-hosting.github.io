@@ -13,9 +13,9 @@ const cuisineToSearchTermMappingFood = [
 ]
 
 // mapping the array data to search term 
-const cuisineToSearchTermMappingExact = {
-    'English Breakfast': 'breakfast places',
-}
+// const cuisineToSearchTermMappingExact = {
+//     'English Breakfast': 'breakfast places',
+// }
 
 function Cuisines(){
 
@@ -49,9 +49,10 @@ function Cuisines(){
 
         if(cuisineToSearchTermMappingFood.includes(cuisine)) {
             searchTerm = cuisine.toLowerCase() + " food";
-        } else {
-            searchTerm = cuisineToSearchTermMappingExact[cuisine];
-        }
+        } 
+        // else {
+        //     searchTerm = cuisineToSearchTermMappingExact[cuisine];
+        // }
         if(searchTerm === undefined) {
             searchTerm = cuisine.toLowerCase();
         }
