@@ -9,13 +9,13 @@ const cuisineToSearchTermMappingFood = [
     'South Indian',
     'Chinese',
     'Mediterranean',
-    'Vegan'
+    'Vegan',
 ]
 
 // mapping the array data to search term 
-// const cuisineToSearchTermMappingExact = {
-//     'English Breakfast': 'breakfast places',
-// }
+const cuisineToSearchTermMappingExact = {
+    'English Breakfast': "breakfast places",
+}
 
 function Cuisines(){
 
@@ -49,11 +49,10 @@ function Cuisines(){
 
         if(cuisineToSearchTermMappingFood.includes(cuisine)) {
             searchTerm = cuisine.toLowerCase() + " food";
-        } 
-        // else {
-        //     searchTerm = cuisineToSearchTermMappingExact[cuisine];
-        // }
-        if(searchTerm === undefined) {
+        } else if(cuisine == "English Breakfast") {
+            searchTerm = cuisineToSearchTermMappingExact[cuisine];
+        }
+        else {
             searchTerm = cuisine.toLowerCase();
         }
         let searchLink1 = "https://www.google.com/search?q="+ searchTerm +"+near+me&rlz=1C1CHBF_enIN943IN943&oq=google+pizza+near+me&aqs=chrome..69i57j0i22i30l9.7169j0j7&sourceid=chrome&ie=UTF-8";
