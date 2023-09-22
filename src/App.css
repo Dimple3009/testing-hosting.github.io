@@ -42,7 +42,7 @@ button {
 
 @media only screen and (max-width: 560px){
   body{
-    padding: 0% 5%;
+    padding: 5%;
   }
   #root{
     max-width: 80%;
@@ -50,7 +50,7 @@ button {
     margin: 5%;
   }
   button{
-    max-width: 100%;
+    max-width: 80%;
   }
   
   
