@@ -1,16 +1,22 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  color: white;
+  background-color: rgba(141, 56, 11, 0.85);
+  padding: 7%;
+  border-radius: 5%;
 }
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url(https://www.washingtonpost.com/graphics/2018/food/24-dishes-that-shaped-how-dc-eats/img/24eats_topper_tablet.gif);
+  background-position: center;
+  background-size: 100%;
+
 }
 
 #box{
-  background-color: tan;
   width: 100%;
   padding: 2%;
   border-radius: 5px;
@@ -19,9 +25,14 @@ body {
 #name{
   font-size: 35px;
   padding: 1%;
-  color: rgb(0, 0, 0);
 }
 
 button {
     margin:1%;
+    background-color: tan;
+    
+}
+
+#new{
+  font-size: 20px;
 }
